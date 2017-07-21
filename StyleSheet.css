@@ -79,7 +79,20 @@ border:none;
     align-items:stretch;
 }
 
-
+/*Review Carousel styling*/
+#myCarousel {
+    color:#474E5D;
+    margin:50px;
+}
+.carousel-indicators {
+    color:#474E5D;
+}
+#h4 {
+    text-align:center;
+}
+#h5 {
+    text-align:center;
+}
 
 
 /*Footer styling*/
