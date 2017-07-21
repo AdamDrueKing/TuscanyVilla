@@ -54,4 +54,11 @@ padding-bottom:0px;
     border:0px;
 }
 
+.location-text {
+    margin:0px;
+    padding:20px;
+    background-color:#474E5D;
+    text-align:center;
+    Font-family: 'Italiana', serif;
+}
 
