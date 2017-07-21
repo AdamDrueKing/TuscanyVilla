@@ -1,4 +1,4 @@
-﻿/*General Styling*/
+﻿General Styling
 /*body {
     background-color:#FFF6F0;
 }*/
@@ -13,8 +13,8 @@
 font-family: 'Michroma', sans-serif;
 background-color:#474E5D;
 margin-bottom:0px;
-border-bottom:0px;
-padding-bottom:0px;
+border-bottom:20px;
+padding:20px;
 }
 
 #bs-example-navbar-collapse-1 {
@@ -62,3 +62,19 @@ padding-bottom:0px;
     Font-family: 'Italiana', serif;
 }
 
+/*Location Pictures Styling*/
+.row-container-locationImageOne {
+    margin:auto;
+}
+
+.thumbnail {
+border:none;
+    border-color:white;
+    padding:20px;
+   
+}
+
+.div.col-sm-4 col-md-5 {
+    margin:auto;
+    align-items:stretch;
+}
