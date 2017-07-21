@@ -1,2 +1,66 @@
-﻿body {
+﻿/*General Styling*/
+body {
+    background-color:#FFF6F0;
+}
+
+
+
+/*NavBar Styling*/
+.navbar-brand {
+    font-size:30px;
+font-family: 'Michroma', sans-serif;
+background-color:#474E5D;
+}
+
+#bs-example-navbar-collapse-1 {
+     Font-family: 'Italiana', serif;
+    font-size:20px;
+    background-color:#474E5D;
+}
+
+/*.collapse navbar-collapse {
+    Font-family: 'Italiana', serif;
+    font-size:20px;
+}
+
+.nav navbar-nav navbar-right {
+    Font-family: 'Italiana', serif;
+    font-size:20px;
+}
+nav#navvy.navbar.navbar-static-top {
+    margin-bottom:0px;
+    background-color:#6A1525;
+    color:#FFF6F0;
+}*/
+
+/*#navvy a {
+    color:#FFF6F0;
+}
+
+#navvy a:hover {
+    background:none;
+}*/
+
+
+/*Trailer Styling*/
+.mainSec {
+    background-image:url('Images/junkyard.jpg');
+    background-size:cover;
+}
+
+h1.container#trailer {
+    text-align:right;
+}
+
+/*Preview Styling*/
+.previewThem {
+    margin:auto;
+
+/*Button*/
+button.navbar-toggle {
+    border:1px solid #FFF6F0;
+}
+span.icon-bar {
+    border:1px solid #FFF6F0;
+
 }
