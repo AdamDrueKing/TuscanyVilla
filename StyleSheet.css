@@ -1,7 +1,9 @@
 ﻿/*General Styling*/
-body {
+/*body {
     background-color:#FFF6F0;
-}
+}*/
+
+
 
 
 
@@ -10,6 +12,9 @@ body {
     font-size:30px;
 font-family: 'Michroma', sans-serif;
 background-color:#474E5D;
+margin-bottom:0px;
+border-bottom:0px;
+padding-bottom:0px;
 }
 
 #bs-example-navbar-collapse-1 {
@@ -18,49 +23,35 @@ background-color:#474E5D;
     background-color:#474E5D;
 }
 
-/*.collapse navbar-collapse {
-    Font-family: 'Italiana', serif;
-    font-size:20px;
+/*Locations Styling*/
+.rows-locations {
+    margin:0px;
+    padding:0px;
+    border:0px;
 }
 
-.nav navbar-nav navbar-right {
-    Font-family: 'Italiana', serif;
-    font-size:20px;
-}
-nav#navvy.navbar.navbar-static-top {
-    margin-bottom:0px;
-    background-color:#6A1525;
-    color:#FFF6F0;
-}*/
-
-/*#navvy a {
-    color:#FFF6F0;
+.img-responsive {
+    margin:0px;
+    padding:0px;
+    border:0px;
 }
 
-#navvy a:hover {
-    background:none;
-}*/
-
-
-/*Trailer Styling*/
-.mainSec {
-    background-image:url('Images/junkyard.jpg');
-    background-size:cover;
+.col {
+    margin:0px;
+    padding:0px;
+    border:0px;
 }
 
-h1.container#trailer {
-    text-align:right;
+.col-sm-8 col-md-9 {
+    margin:0px;
+    padding:0px;
+    border:0px;
 }
 
-/*Preview Styling*/
-.previewThem {
-    margin:auto;
-
-/*Button*/
-button.navbar-toggle {
-    border:1px solid #FFF6F0;
+.col-sm-4 col-md-3 {
+    margin:0px;
+    padding:0px;
+    border:0px;
 }
-span.icon-bar {
-    border:1px solid #FFF6F0;
 
-}
+
