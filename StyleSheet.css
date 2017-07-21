@@ -78,3 +78,14 @@ border:none;
     margin:auto;
     align-items:stretch;
 }
+
+
+
+
+/*Footer styling*/
+.footer {
+    Font-family: 'Italiana', serif;
+    font-size:20px;
+    background-color:#474E5D;
+    text-align:center;
+}
