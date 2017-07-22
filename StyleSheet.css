@@ -92,7 +92,13 @@ border:none;
 }
 #h5 {
     text-align:center;
-}
+}/*Contact form styling*/
+
+ .row-container-contactForm {
+     background-color:white;
+ }
+
+
 
 
 /*Footer styling*/

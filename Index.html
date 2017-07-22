@@ -17,19 +17,19 @@
 
     <style>
         input[type=text], select, textarea {
-            width: 50%;
-            padding: 12px;
+            width: 40%;
+            padding: 2px;
             border: 1px solid #ccc;
-            border-radius: 4px;
+            border-radius: 2px;
             box-sizing: border-box;
-            margin-top: 6px;
-            margin-bottom: 16px;
+            margin-top: 3px;
+            margin-bottom: 6px;
             resize: vertical;
         }
 
         input[type=submit] {
-            background-color: white;
-            color: white;
+            background-color:#474E5D;
+            color:white;
             padding: 12px 20px;
             border: none;
             border-radius: 4px;
@@ -40,10 +40,10 @@
                 background-color:#474E5D;
             }
 
-        .container {
-            border-radius: 5px;
+        .row-container-contactForm {
+            border-radius: 0px;
             background-color: white;
-            padding: 20px;
+            padding: 100px;
         }
     </style>
 
@@ -83,7 +83,7 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                
+
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">Locations</a></li>
                     <li><a href="#">Ammenities</a></li>
@@ -103,30 +103,36 @@
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
-    
+
     <!--Picture Section Start-->
-    <div class="row locations" style="margin:0px">
-       <style>           {
-               padding: 0px;
-               margin: 0px;
-               border: 0px;
-           }
-       </style> 
-            <!--First Thumbnail-->
-       
-        
-            
-        <div class="col-sm-8 col-md-9" style="padding:0px" style="margin:0px">
-                <style>
-                    padding:0px
-                </style>
-                <img class="img-responsive" src="Images/Img10.jpg" alt="Tuscany Villa" style="margin:0px" />
-            </div>
-            <!--Second Thumbnail-->
-            <div class="col-sm-4 col-md-3" style="padding:0px" style="border:0px">
-                <img class="img-responsive" src="Images/Img4.jpg" alt="Tuscan Map" style="border:0px" />
-            </div>
-</div>
+    <div class="row locations" style="margin:0px" >
+        <style>
+            {
+                padding: 0px;
+                margin: 0px;
+                border: 0px;
+            }
+        </style>
+        <!--First Thumbnail-->
+
+
+
+        <div class="col-sm-8 col-md-9" style="padding:0px">
+            <style> {
+     padding:0px;
+     margin:0px;
+     border:0px;
+ }
+                
+
+            </style>
+            <img class="img-responsive" src="Images/Img10.jpg" alt="Tuscany Villa" style="margin:-30px" />
+        </div>
+        <!--Second Thumbnail-->
+        <div class="col-sm-4 col-md-3" style="padding:0px">
+            <img class="img-responsive" src="Images/Img4.jpg" alt="Tuscan Map" style="border:0px" />
+        </div>
+    </div>
 
 
     <!--Location Text Tab-->
@@ -136,7 +142,6 @@
     </div>
 
     <!--Location Pictures Tab-->
-
     <!--Location Image 1-->
     <!--<div class="row container locationImageOne">
         <div class="col-sm-4 col-md-7">
@@ -149,51 +154,46 @@
             </div>
         </div>
         <!--Product Image 1-->
-        <!--<div class="col-sm-4 col-md-5" style="padding:30px">
-            <img class="img-responsive" src="Images/Img7.jpeg" alt="" />
-        </div>-->
-
-
-        <!--Location Image 2-->
-        <!--<div class="row container locationImageTwo"> </div>--> <!--style="background-color:#474E5D"-->  
-            <!--Location Image 2-->
-            <!--<div class="col-sm-4 col-md-5" style="padding:30px">
-                <img class="img-responsive" src="Images/Img8.jpeg" alt="" />
-            </div>-->
-            <!--Location Text 2-->
-            <!--<div class="col-sm-4 col-md-7">
-                <div class="thumbnail">
-                    <div class="caption">
-                        <h3>Location #2</h3>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). </p>
-                        <p><a href="" class="btn btn-primary" role="button">Check It Out!</a></p>
-                    </div>
+    <!--<div class="col-sm-4 col-md-5" style="padding:30px">
+        <img class="img-responsive" src="Images/Img7.jpeg" alt="" />
+    </div>-->
+    <!--Location Image 2-->
+    <!--<div class="row container locationImageTwo"> </div>--> <!--style="background-color:#474E5D"-->
+    <!--Location Image 2-->
+    <!--<div class="col-sm-4 col-md-5" style="padding:30px">
+        <img class="img-responsive" src="Images/Img8.jpeg" alt="" />
+    </div>-->
+    <!--Location Text 2-->
+    <!--<div class="col-sm-4 col-md-7">
+            <div class="thumbnail">
+                <div class="caption">
+                    <h3>Location #2</h3>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). </p>
+                    <p><a href="" class="btn btn-primary" role="button">Check It Out!</a></p>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <!--Location Image 3-->
+    <!--<div class="row container locationImageThree">
+        <div class="col-sm-4 col-md-7">
+            <div class="thumbnail">
+                <div class="caption">
+                    <h3>Location #3</h3>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). </p>
+                    <p><a href="" class="btn btn-primary" role="button">Join Us!</a></p>
                 </div>
             </div>
         </div>-->
-            
-            <!--Location Image 3-->
-            <!--<div class="row container locationImageThree">
-                <div class="col-sm-4 col-md-7">
-                    <div class="thumbnail">
-                        <div class="caption">
-                            <h3>Location #3</h3>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). </p>
-                            <p><a href="" class="btn btn-primary" role="button">Join Us!</a></p>
-                        </div>
-                    </div>
-                </div>-->
-                <!--Product Image 2-->
-                <!--<div class="col-sm-4 col-md-5" style="padding:30px">
-                    <img class="img-responsive" src="Images/Img9.jpeg" alt="" />
-                </div>-->
-
-
-                <!--Amenities Text Tab-->
-                <div class="location-text" style="color:white">
-                    <h2 class="container">AMENITIES</h2>
-                    <h4 class="container">Some stuff for you to enjoy</h4>
-                </div>
+    <!--Product Image 2-->
+    <!--<div class="col-sm-4 col-md-5" style="padding:30px">
+        <img class="img-responsive" src="Images/Img9.jpeg" alt="" />
+    </div>-->
+    <!--Amenities Text Tab-->
+    <div class="location-text" style="color:white">
+        <h2 class="container">AMENITIES</h2>
+        <h4 class="container">Some stuff for you to enjoy</h4>
+    </div>
 
 
 
@@ -222,7 +222,6 @@
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>-->
-
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item active" style="text-align:center">
@@ -268,32 +267,32 @@
     </div>
 
 
-    <!--Contact Form-->
-    <h3>Contact Form</h3>
+    <!--Contact Form--> 
+    <div class="row-container-contactForm">
+        <div class="container col-sm-10 col-md-7">
+            <p>Contact us and we'll get back to you within 24hrs.</p>
+            <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Cleveland, OH</p>
+            <p><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 555-555-1212</p>
+            <p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> name@email.com</p>
 
-    <div class="container">
-        <form action="/action_page.php">
-            <label for="name"></label>
-            <input type="text" id="fname" name="firstname" placeholder="Name">
+        </div>
 
-            <!--<label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">-->
+        <div class="container col-sm-8 col-md-5">
+            <form action="/action_page.php">
+                <label for="name"></label>
+                <input type="text" id="fname" name="firstname" placeholder="Name">
 
-            <label for="email"></label>
-            <input type="text" id="email" name="email" placeholder="Email">
-            <!--<select id="country" name="country">-->
-                <!--<option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>-->
-            <!--</select>-->
+                <label for="email"></label>
+                <input type="text" id="email" name="email" placeholder="Email">
 
-            <label for="comment"></label>
-            <textarea id="subject" name="subject" placeholder="Comment" style="height:200px"></textarea>
+                <label for="comment"></label>
+                <textarea id="subject" name="subject" placeholder="Comment" style="height:100px" ></textarea>
 
-            <input type="submit" value="Submit">
-        </form>
+                <input type="submit" value="Submit">
+            </form>  
+        </div>
     </div>
-
+    
 
 
 
@@ -301,7 +300,7 @@
     <!--Footer Tab-->
     <footer>
         <div class="footer" style="color:white">
-            <span class="glyphicon glyphicon-chevron-up"aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
             <p>Created by: Adam King</p>
             <p>Not at all copyrighted</p>
         </div>
