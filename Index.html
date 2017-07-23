@@ -5,6 +5,40 @@
 	<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!--Hopefully a functional bootstrap overlay-->
+    <!--<title>Bootstrap image Overlay</title>
+    <meta content="width=device-width, initialscale=1" name="viewport">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.j" type="text/javascript">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript">
+    </script>
+    <style>
+        .caption {
+            width: 100%;
+            bottom: .3rem;
+            position: absolute;
+            background: #000;
+            background: -webkit-linear-gradient(bottom, #000 40%, rgba(0, 0, 0, 0) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+            background: -moz-linear-gradient(bottom, #000 40%, rgba(0, 0, 0, 0) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+            background: -o-linear-gradient(bottom, #000 40%, rgba(0, 0, 0, 0) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+            background: linear-gradient(to top, #000 40%, rgba(0, 0, 0, 0) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+        }
+
+        .thumbnail {
+            border: 0 none;
+            box-shadow: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .caption h4 {
+            color: #fff;
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>-->
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -12,10 +46,53 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
     <!--ADD JQUERY CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <style>
+        .container {
+            position: relative;
+            width: 50%;
+        }
+
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+
+        .container:hover .image {
+            opacity: 0.3;
+        }
+
+        .container:hover .middle {
+            opacity: 1;
+        }
+
+        .text {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            padding: 16px 32px;
+        }
+    </style>
+
+    <!--Contact Us Styling-->
+    <!--<style>
         input[type=text], select, textarea {
             width: 40%;
             padding: 2px;
@@ -25,9 +102,9 @@
             margin-top: 3px;
             margin-bottom: 6px;
             resize: vertical;
-        }
+        }-->
 
-        input[type=submit] {
+        <!--input[type=submit] {
             background-color:#474E5D;
             color:white;
             padding: 12px 20px;
@@ -38,30 +115,29 @@
 
             input[type=submit]:hover {
                 background-color:#474E5D;
-            }
+            }-->
 
-        .row-container-contactForm {
+        <!--.row-container-contactForm {
             border-radius: 0px;
             background-color: white;
             padding: 100px;
         }
-    </style>
+    </style>-->
 
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
 
 
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
 
     <!--Font Library Added-->
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Italiana|Michroma|Zilla+Slab" rel="stylesheet">
 
-
+    <!--Personal style sheet-->
     <link href="StyleSheet.css" rel="stylesheet" />
 </head>
 
@@ -71,7 +147,7 @@
     <nav class="navbar navbar" style="color:white">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
+            <div class="navbar-header" style="color:white">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -83,229 +159,335 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">Locations</a></li>
                     <li><a href="#">Ammenities</a></li>
                     <li><a href="#">Reviews</a></li>
                     <li><a href="#">Contact</a></li>
-                    <!--<li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                        </ul>
-                    </li>-->
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
 
     <!--Picture Section Start-->
-    <div class="row locations" style="margin:0px" >
-        <style>
-            {
-                padding: 0px;
-                margin: 0px;
-                border: 0px;
-            }
-        </style>
-        <!--First Thumbnail-->
-
-
-
-        <div class="col-sm-8 col-md-9" style="padding:0px">
-            <style> {
-     padding:0px;
-     margin:0px;
-     border:0px;
- }
-                
-
-            </style>
-            <img class="img-responsive" src="Images/Img10.jpg" alt="Tuscany Villa" style="margin:-30px" />
-        </div>
-        <!--Second Thumbnail-->
-        <div class="col-sm-4 col-md-3" style="padding:0px">
-            <img class="img-responsive" src="Images/Img4.jpg" alt="Tuscan Map" style="border:0px" />
+    <!--First Thumbnail-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="img-responsive col-xs-12 col-sm-12 col-md-9" style="padding:0px; margin:0px; border:0px">
+                <img src="Images/Img10.jpg" alt="Tuscany Villa" />
+            </div>
+            <div class="img-responsive col-xs-12 col-sm-12 col-md-3" style="padding:0px; margin:0px; border:0px">
+                <img src="Images/Img4.jpg" alt="Tuscan Map" />
+            </div>
         </div>
     </div>
 
 
     <!--Location Text Tab-->
-    <div class="location-text" style="color:white">
-        <h2 class="container">LOCATIONS</h2>
-        <h4 class="container">Some Places for you to go</h4>
+    <div class="container-fluid location-text">
+        <div class="location-text" style="color:white">
+            <h2 class="container location-text" style="font-family: 'Michroma', sans-serif; text-align:center">LOCATIONS</h2>
+            <h4 class="container location-text" style="Font-family: 'Italiana', serif;">Some Places for you to go</h4>
+        </div>
     </div>
 
-    <!--Location Pictures Tab-->
-    <!--Location Image 1-->
-    <!--<div class="row container locationImageOne">
-        <div class="col-sm-4 col-md-7">
-            <div class="thumbnail">
+
+    <!--Location Pictures Tab
+           <!--Location Image 1-->
+    <div class="container-fluid">
+        <div class="row location-images">
+            <div class="col-sm-12 col-md-7">
                 <div class="caption">
                     <h3>Location #1</h3>
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). </p>
                     <p><a href="" class="btn btn-primary" role="button">Reserve Now!</a></p>
                 </div>
             </div>
+            <!--Product Image 1-->
+            <div class="col-sm-12 col-md-5" style="padding:30px">
+                <img class="img-responsive" src="Images/Img7.jpeg" alt="Snowy Mountain at Dusk" />
+            </div>
         </div>
-        <!--Product Image 1-->
-    <!--<div class="col-sm-4 col-md-5" style="padding:30px">
-        <img class="img-responsive" src="Images/Img7.jpeg" alt="" />
-    </div>-->
+    </div>
+
     <!--Location Image 2-->
-    <!--<div class="row container locationImageTwo"> </div>--> <!--style="background-color:#474E5D"-->
-    <!--Location Image 2-->
-    <!--<div class="col-sm-4 col-md-5" style="padding:30px">
-        <img class="img-responsive" src="Images/Img8.jpeg" alt="" />
-    </div>-->
-    <!--Location Text 2-->
-    <!--<div class="col-sm-4 col-md-7">
-            <div class="thumbnail">
-                <div class="caption">
+    <div class="container-fluid">
+        <div class="row location-images" style="background-color:#474E5D">
+            <!--Product Image 2-->
+            <div class="col-sm-12 col-md-5" style="padding:30px">
+                <img class="img-responsive" src="Images/Img8.jpeg" alt="Modern Italian Villa" />
+            </div>
+            <!--Text 2-->
+            <div class="col-sm-12 col-md-7">
+                <div class="caption" style="color:white">
                     <h3>Location #2</h3>
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). </p>
                     <p><a href="" class="btn btn-primary" role="button">Check It Out!</a></p>
                 </div>
             </div>
         </div>
-    </div>-->
+    </div>
+
     <!--Location Image 3-->
-    <!--<div class="row container locationImageThree">
-        <div class="col-sm-4 col-md-7">
-            <div class="thumbnail">
+    <div class="container-fluid">
+        <div class="row location-images">
+            <div class="col-sm-12 col-md-7">
                 <div class="caption">
                     <h3>Location #3</h3>
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). </p>
                     <p><a href="" class="btn btn-primary" role="button">Join Us!</a></p>
                 </div>
             </div>
-        </div>-->
-    <!--Product Image 2-->
-    <!--<div class="col-sm-4 col-md-5" style="padding:30px">
-        <img class="img-responsive" src="Images/Img9.jpeg" alt="" />
-    </div>-->
+            <!--Product Image 3-->
+            <div class="col-sm-12 col-md-5" style="padding:30px">
+                <img class="img-responsive" src="Images/Img9.jpeg" alt="Tuscan Winery" />
+            </div>
+        </div>
+    </div>
+
+
     <!--Amenities Text Tab-->
-    <div class="location-text" style="color:white">
-        <h2 class="container">AMENITIES</h2>
-        <h4 class="container">Some stuff for you to enjoy</h4>
+    <div class="container-fluid ammenities-text">
+        <div class="ammenities-text" style="color:white">
+            <h2 class="container ammenities-text" style="font-family: 'Michroma', sans-serif;">AMENITIES</h2>
+            <h4 class="container ammenities-text" style="Font-family: 'Italiana', serif;">Some stuff for you to enjoy</h4>
+        </div>
+    </div>
+
+    <!--Amenities Images Tab-->
+
+    
+    
+    <!--HOVEROVER TESTING-->
+    <!--<div class="container">
+        <img src="Images/Img2.jpg" alt="Avatar" class="image" style="width:100%">
+        <div class="middle">
+            <div class="text">RECEPTIONS</div>
+        </div>
+    </div>-->
+    <!--Row 1-->
+    <div class="container-fluid" style="text-align:center; padding-top:50px; border-top:50px;">
+        <div class="row ammenities-images">
+            <!--Ammenities Images 1-->
+            <div class="col-sm-12 col-md-4" style="padding:0px; margin:0px; border:0px">
+                <!--<img class="img-responsive" src="Images/Img2.jpg" alt="Pool at night" />-->
+                <img src="Images/Img2.jpg" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                    <div class="text">RECEPTIONS</div>
+                </div>
+            </div>
+            <!--Text 1-->
+            <div class="col-sm-12 col-md-4">
+                <div class="caption">
+                    <h3>A VILLA FOR EVERY</h3>
+                    <h3>OCCASION</h3>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). </p>
+                    <p><a href="" class="btn btn-primary" role="button">Check It Out!</a></p>
+                </div>
+            </div>
+            <!--Ammenities Images 2-->
+            <div class="col-sm-12 col-md-4" style="padding:0px; margin:0px; border:0px">
+                <!--<img class="img-responsive" src="Images/Img3.jpg" alt="Pool at night" />-->
+                <img src="Images/Img3.jpg" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                    <div class="text">RELAX BY THE POOL</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Row 2-->
+    <div class="container-fluid" style="text-align:center">
+        <div class="row ammenities-images">
+            <!--Text 2-->
+            <div class="col-sm-12 col-md-4">
+                <div class="caption">
+                    <h3>WHAT SETS US APART</h3>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). </p>
+                    <p><a href="" class="btn btn-primary" role="button">Check It Out!</a></p>
+                </div>
+            </div>
+            <!--Ammenities Images 3-->
+            <div class="col-sm-12 col-md-4" style="padding:0px; margin:0px; border:0px" >
+                <!--<img class="img-responsive" src="Images/Img1.jpg" alt="Cozy Bedroom" />-->
+                <img src="Images/Img1.jpg" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                    <div class="text">FEELS LIKE HOME</div>
+                </div>
+            </div>
+            <!--Text 2-->
+            <div class="col-sm-12 col-md-4">
+                <div class="caption">
+                    <h3>TALK TO STAFF</h3>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). </p>
+                    <p><a href="" class="btn btn-primary" role="button">Check It Out!</a></p>
+                </div>
+            </div>
+            </div>
+        </div>
+    <!--Row 3-->
+    <div class="container-fluid" style="text-align:center; padding-bottom:50px; border-bottom:50px">
+        <div class="row ammenities-images">
+            <!--Ammenities Images 5-->
+            <div class="col-sm-12 col-md-4"style="padding:0px; margin:0px; border:0px">
+                <!--<img class="img-responsive" src="Images/Img5.jpg" alt="Daytime Dining" />-->
+                <img src="Images/Img5.jpg" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                    <div class="text">ENJOY THE VIEWS</div>
+                </div>
+            </div>
+            <!--Text 1-->
+            <div class="col-sm-12 col-md-4">
+                <div class="caption">
+                    <h3>BOOK YOUR VILLA</h3>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). </p>
+                    <p><a href="" class="btn btn-primary" role="button">Check It Out!</a></p>
+                </div>
+            </div>
+            <!--Ammenities Images 5-->
+            <div class="col-sm-12 col-md-4" style="padding:0px; margin:0px; border:0px">
+                <!--<img class="img-responsive" src="Images/Img6.jpg" alt="Daytime Dining" />-->
+                <img src="Images/Img6.jpg" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                    <div class="text">PRIVATE DINING</div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
-
-
-
-
-
-
-
-    <!--Reviews Text Tab-->
-    <div class="location-text" style="color:white">
-        <h2 class="container">REVIEWS</h2>
-        <h4 class="container">What our customers say</h4>
+            <!--Reviews Text Tab-->
+    <div class="container-fluid reviews-text">
+        <div class="reviews-text" style="color:white">
+            <h2 class="container reviews-text" style="font-family: 'Michroma', sans-serif;">REVIEWS</h2>
+            <h4 class="container reviews-text" style="Font-family: 'Italiana', serif;">What our customers say</h4>
+        </div>
     </div>
 
-
-
-
-    <!--Reviews Carousel-->
-    <div class="container">
-        <!--<h2>Carousel Example</h2>-->
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+           
+            <!--Reviews Carousel-->
+            <div class="container">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
-            <!--<ol class="carousel-indicators">
+            <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>-->
+            </ol>
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item active" style="text-align:center">
                     <p>"I love it! I love it! I love it!"</p>
                     <p>Bella, Avid Napper</p>
-                    <!--<img src="la.jpg" alt="Customer Review 1" style="width:100%;">-->
-                </div>
-
-                <div class="item" style="text-align:center">
-                    <p>"I love it! I love it! I love it!"</p>
-                    <p>Stella, Avid Rapper</p>
-                    <!--<img src="chicago.jpg" alt="Customer Review 2" style="width:100%;">-->
-                </div>
-
-                <div class="item" style="text-align:center">
-                    <p>"I love it! I love it! I love it!"</p>
-                    <p>Della, Avid Dapper</p>
-                    <!--<img src="ny.jpg" alt="Customer Review 3" style="width:100%;">-->
+            <img src="la.jpg" alt="Customer Review 1" style="width:100%;">
+            </div>
+            <div class="item" style="text-align:center">
+                <p>"I love it! I love it! I love it!"</p>
+                <p>Stella, Avid Rapper</p>
+            <img src="chicago.jpg" alt="Customer Review 2" style="width:100%;">
+            </div>
+            <div class="item" style="text-align:center">
+                <p>"I love it! I love it! I love it!"</p>
+                <p>Della, Avid Dapper</p>
+            <img src="ny.jpg" alt="Customer Review 3" style="width:100%;">
+            </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
 
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-            </a>
+
+
+
+
+            <!--Contact Text Tab-->
+    <div class="container-fluid contact-text">
+        <div class="contact-text" style="color:white">
+            <h2 class="container contact-text" style="font-family: 'Michroma', sans-serif;">CONTACT</h2>
+            <h4 class="container contact-text" style="Font-family: 'Italiana', serif;">We've got the answers</h4>
+        </div>
+    </div>
+
+           
+            <!--Contact Form-->
+    <div class="container-fluid contactForm" style="background-color:white; padding:50px; border:50px">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-7">
+                <p>Contact us and we'll get back to you within 24hrs.</p>
+                <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Cleveland, OH</p>
+                <p><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 555-555-1212</p>
+                <p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> name@email.com</p>
+            </div>
+            <div class="img-responsive col-xs-12 col-sm-12 col-md-5">
+                <form action="/action_page.php">
+                    <label for="name"></label>
+                    <input type="text" id="fname" name="firstname" placeholder="Name">
+
+                    <label for="email"></label>
+                    <input type="text" id="email" name="email" placeholder="Email">
+
+                    <label for="comment"></label>
+                    <textarea id="subject" name="subject" placeholder="Comment" style="height:100px"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </div>
     </div>
 
 
 
-
-
-
-    <!--Contact Text Tab-->
-    <div class="location-text" style="color:white">
-        <h2 class="container">CONTACT</h2>
-        <h4 class="container">We've got the answers</h4>
-    </div>
-
-
-    <!--Contact Form--> 
-    <div class="row-container-contactForm">
-        <div class="container col-sm-10 col-md-7">
-            <p>Contact us and we'll get back to you within 24hrs.</p>
-            <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Cleveland, OH</p>
-            <p><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 555-555-1212</p>
-            <p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> name@email.com</p>
-
-        </div>
-
-        <div class="container col-sm-8 col-md-5">
-            <form action="/action_page.php">
-                <label for="name"></label>
-                <input type="text" id="fname" name="firstname" placeholder="Name">
-
-                <label for="email"></label>
-                <input type="text" id="email" name="email" placeholder="Email">
-
-                <label for="comment"></label>
-                <textarea id="subject" name="subject" placeholder="Comment" style="height:100px" ></textarea>
-
-                <input type="submit" value="Submit">
-            </form>  
-        </div>
-    </div>
+            <!--Footer Tab-->
+    <footer>
+        <div class="footer" style="color:white; background-color:#474E5D; text-align:center; padding:50px; border:50px; font-family:'Italiana'; font-size:20px">
+        <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+        <p>Created by: Adam King</p>
+        <p>Not at all copyrighted</p>
+            </div>
+    </footer>
     
 
+    <!--Bootstrap rollover test-->
+    <div class="container" style="margin:20px;">
+        <div class=" col-sm-12 row">
+            <div class="col-sm-4">
+                <div class="col-sm-12 thumbnail text-center">
+                    <img alt="" class="img-responsive" src="http://www.wallpapereast.com/static/images/6801692-lovely-nature-wallpaper.jpg">
 
+                    <div class="caption">
+                        <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+                    </div>
+                </div>
+            </div>
 
+            <div class="col-sm-4">
+                <div class="col-sm-12 thumbnail text-center">
+                    <img alt="" class="img-responsive" src="http://www.wallpapereast.com/static/images/6801692-lovely-nature-wallpaper.jpg">
 
-    <!--Footer Tab-->
-    <footer>
-        <div class="footer" style="color:white">
-            <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
-            <p>Created by: Adam King</p>
-            <p>Not at all copyrighted</p>
+                    <div class="caption">
+                        <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="col-sm-12 thumbnail text-center">
+                    <img alt="" class="img-responsive" src="http://www.wallpapereast.com/static/images/6801692-lovely-nature-wallpaper.jpg">
+
+                    <div class="caption">
+                        <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
-
-    <!--<p><strong>Note:</strong> The footer tag is not supported in Internet Explorer 8 and earlier versions.</p>-->
+    </div>
 </body>
 </html>
+

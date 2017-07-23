@@ -1,33 +1,68 @@
 ﻿General Styling
-/*body {
+body {
     background-color:#FFF6F0;
-}*/
+    border:0px;
+    margin:0px;
+    padding:0px;
+}
 
 
 
 
 
 /*NavBar Styling*/
+.navbar {
+    margin-bottom:0px;
+    border-bottom:0px;
+    padding-bottom:0px;
+    background-color:#474E5D;
+}
+.navbar-navbar {
+    color:white;
+    background-color:#474E5D;
+    margin:0px;
+    margin-bottom:0px;
+    padding-bottom:0px;
+    border-bottom:0px;
+}
 .navbar-brand {
     font-size:30px;
-font-family: 'Michroma', sans-serif;
-background-color:#474E5D;
-margin-bottom:0px;
-border-bottom:20px;
-padding:20px;
-}
-
-#bs-example-navbar-collapse-1 {
-     Font-family: 'Italiana', serif;
-    font-size:20px;
+    font-family: 'Michroma', sans-serif;
     background-color:#474E5D;
 }
 
-/*Locations Styling*/
-.rows-locations {
+.collapse-navbar-collapse {
     margin:0px;
     padding:0px;
     border:0px;
+    background-color:#474E5D;
+
+}
+
+#bs-example-navbar-collapse-1 {
+    Font-family: 'Italiana', serif;
+    font-size:20px;
+    background-color:#474E5D;
+    margin-right:0px;
+    border-right:15px;
+    padding-right:15px;
+}
+
+.img-responsive-col-xs-12-col-sm-12-col-md-9 {
+    margin:0px;
+    border:0px;
+    padding:0px;    
+}
+
+/*Locations Styling*/
+
+.location-text {
+    text-align:center;
+    margin:0px;
+    padding:10px;
+    border:10px;
+    background-color:#474E5D;
+    Font-family: 'Italiana', serif;
 }
 
 .img-responsive {
@@ -36,7 +71,64 @@ padding:20px;
     border:0px;
 }
 
-.col {
+h3 {
+    font-size:20px;
+    font-family: 'Michroma', sans-serif;
+}
+
+/*Ammenities Styling*/
+.ammenities-text {
+    text-align:center;
+    margin:0px;
+    padding:10px;
+    border:10px;
+    background-color:#474E5D;
+    Font-family: 'Italiana', serif;
+}
+
+/*Ammenities Pictures Styling*/
+.row-ammenities-images {
+    margin:10px;
+    padding-top:10px;
+    border-top:10px;
+}
+
+/*Reviews Styling*/
+.reviews-text {
+    text-align:center;
+    margin:0px;
+    padding:10px;
+    border:10px;
+    background-color:#474E5D;
+    Font-family: 'Italiana', serif;
+}
+
+/*Review Carousel styling*/
+#myCarousel {
+    color:#474E5D;
+    margin:50px;
+}
+.carousel-indicators {
+    color:#474E5D;
+}
+
+/*Contact Styling*/
+.contact-text {
+    text-align:center;
+    margin:0px;
+    padding:10px;
+    border:10px;
+    background-color:#474E5D;
+    Font-family: 'Italiana', serif;
+}
+
+.row-container-fluid-contactForm {
+    background-color:white;
+}
+
+
+
+/*.col {
     margin:0px;
     padding:0px;
     border:0px;
@@ -63,7 +155,7 @@ padding:20px;
 }
 
 /*Location Pictures Styling*/
-.row-container-locationImageOne {
+/*.row-container-locationImageOne {
     margin:auto;
 }
 
@@ -77,26 +169,19 @@ border:none;
 .div.col-sm-4 col-md-5 {
     margin:auto;
     align-items:stretch;
-}
+}*/
 
-/*Review Carousel styling*/
-#myCarousel {
-    color:#474E5D;
-    margin:50px;
-}
-.carousel-indicators {
-    color:#474E5D;
-}
-#h4 {
+
+/*#h4 {
     text-align:center;
 }
 #h5 {
-    text-align:center;
+    text-align:center;*/
 }/*Contact form styling*/
 
- .row-container-contactForm {
+ /*.row-container-contactForm {
      background-color:white;
- }
+ }*/
 
 
 
@@ -107,4 +192,7 @@ border:none;
     font-size:20px;
     background-color:#474E5D;
     text-align:center;
+    margin:0px;
+    border:10px;
+    padding:10px;
 }
