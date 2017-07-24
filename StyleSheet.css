@@ -1,6 +1,6 @@
 ﻿General Styling
 body {
-    background-color:#FFF6F0;
+    background-color:white;
     border:0px;
     margin:0px;
     padding:0px;
@@ -48,10 +48,52 @@ body {
     padding-right:15px;
 }
 
-.img-responsive-col-xs-12-col-sm-12-col-md-9 {
+/*.img-responsive-col-xs-12-col-sm-12-col-md-9 {
     margin:0px;
     border:0px;
     padding:0px;    
+}*/
+
+
+/*Picture Styling*/
+
+.mainSec {
+    background-image: url('Images/Img10.jpg');
+    background-size:cover;
+    font-family: 'Michroma', sans-serif;
+    margin-bottom: 0px;
+    padding-top: 30px;
+    padding-bottom: 220px;
+}
+
+h1#headerText {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align:center;
+    color:white;
+}
+
+p#headerSubText {
+    margin-bottom: 0px;
+    text-align:center;
+    color:white;
+}
+
+.mapSec {
+    margin-bottom: 0px;
+    background-image: url('Images/Img4.jpg');
+    padding-top: 324px;
+    padding-bottom: 0px;
+}
+
+.col-sm-12 col-md-9 col-lg-9 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.col-sm-12 col-md-3 col-lg-3 {
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 /*Locations Styling*/
@@ -125,66 +167,6 @@ h3 {
 .row-container-fluid-contactForm {
     background-color:white;
 }
-
-
-
-/*.col {
-    margin:0px;
-    padding:0px;
-    border:0px;
-}
-
-.col-sm-8 col-md-9 {
-    margin:0px;
-    padding:0px;
-    border:0px;
-}
-
-.col-sm-4 col-md-3 {
-    margin:0px;
-    padding:0px;
-    border:0px;
-}
-
-.location-text {
-    margin:0px;
-    padding:20px;
-    background-color:#474E5D;
-    text-align:center;
-    Font-family: 'Italiana', serif;
-}
-
-/*Location Pictures Styling*/
-/*.row-container-locationImageOne {
-    margin:auto;
-}
-
-.thumbnail {
-border:none;
-    border-color:white;
-    padding:20px;
-   
-}
-
-.div.col-sm-4 col-md-5 {
-    margin:auto;
-    align-items:stretch;
-}*/
-
-
-/*#h4 {
-    text-align:center;
-}
-#h5 {
-    text-align:center;*/
-}/*Contact form styling*/
-
- /*.row-container-contactForm {
-     background-color:white;
- }*/
-
-
-
 
 /*Footer styling*/
 .footer {
